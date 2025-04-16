@@ -59,7 +59,7 @@ policy "ec2-vpc-default-security-group-no-traffic" {
 
 policy "ec2-metadata-imdsv2-required" {
   source = "./policies/ec2/ec2-metadata-imdsv2-required.sentinel"
-  enforcement_level = "advisory"
+  enforcement_level = "hard-mandatory"
 }
 
 policy "ec2-security-group-ipv4-ingress-traffic-restriction" {
